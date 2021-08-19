@@ -82,7 +82,8 @@ function display20Images(){
     for (let i = 0; i < 20; i ++){
         coin.flip();
         
-        results.push(coin.toString);
+        results.push(coin.toString());
+        
         if(coin.toString() === "Heads"){
             coin.toHTML(this.imageCara)
             
@@ -118,5 +119,6 @@ function createButton()
 }
 
 createButton();
+console.log(display20Images());
 
 
